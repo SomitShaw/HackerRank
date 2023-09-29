@@ -1,0 +1,49 @@
+public class myArray {
+    private String name;
+    private int indexnum;
+    private int[] arr;
+    private String desc;
+    private int updateIndex;
+
+    public myArray(String name, int indexnum, int[] arr, String desc, int updateIndex) {
+        this.name = name;
+        this.indexnum = indexnum;
+        this.arr = arr;
+        this.updateIndex = updateIndex;
+        this.desc = desc;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getIndexNum() {
+        return indexnum;
+    }
+
+    public int[] getArr() {
+        return arr;
+    }
+
+    public int getUpdateIndex() {
+        return updateIndex;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    @Override
+    public String toString() {
+        return "Hi there " + this.getName() +
+                " Array Index is " + this.getIndexNum() +
+                " Update Index is " + this.getUpdateIndex() +
+                " Array Contents are " + java.util.Arrays.toString(this.getArr());
+    }
+
+    public static void main(String[] args) {
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
+        myArray first = new myArray("Somit", 6, arr, "Y", 3);
+        System.out.println(first.toString());
+    }
+}
