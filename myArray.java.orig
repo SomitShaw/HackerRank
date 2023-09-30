@@ -42,8 +42,8 @@ public class myArray {
     }
 
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7 };
-        myArray first = new myArray("Somit", 7, arr, "Y", 3);
+        int[] arr = { 1, 2, 3, 4, 5, 6 };
+        myArray first = new myArray("Somit", 6, arr, "Y", 3);
         System.out.println(first.toString());
     }
 }
